@@ -19,7 +19,7 @@ module.exports = function ( options ) {
       ok: {
         muteable: false,
         color: 'yellow',
-        token: ' ✔ ︎'
+        token: ' ✔ '
       },
       subtle: {
         muteable: true,
@@ -34,12 +34,12 @@ module.exports = function ( options ) {
       log: {
         muteable: true,
         color: 'white',
-        token: ' ℹ︎ '
+        token: ' ℹ '
       },
       warn: {
         muteable: false,
         color: 'magenta',
-        token: ' ⚠︎ '
+        token: ' ⚠ '
       },
       print: {
         muteable: false,
@@ -50,7 +50,7 @@ module.exports = function ( options ) {
       success: {
         muteable: false,
         color: 'green',
-        token: ' ✓ ︎'
+        token: ' ✓ '
       }
     }
   }, options );
