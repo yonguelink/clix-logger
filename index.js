@@ -74,7 +74,7 @@ module.exports = function ( options ) {
         return opts.coloredOutput ? chalk[ entry.color ]( inspect( arg ) ) : inspect( arg );
       } );
 
-      var logFn = (key !== 'error') ? 'log' : 'error';
+      var logFn = 'log';
 
       console[ logFn ].apply( console, args );
 
