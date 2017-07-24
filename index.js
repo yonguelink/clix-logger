@@ -15,6 +15,7 @@ module.exports = function ( options ) {
     var opts = extend( {
         appendTime: true,
         coloredOutput: false,
+        format:'HH:mm:ss',
         methods: {
             ok: {
                 muteable: false,
@@ -63,7 +64,7 @@ module.exports = function ( options ) {
             var args = [ ].slice.call( arguments );
 
             if ( opts.appendTime && !entry.noAppendTime ) {
-                args.unshift( '[' + getTime() + ']' );
+                args.unshift( '[' + getTime(opts.format) + ']' );
             }
 
             if ( entry.token ) {
